@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lorem Ipsum Elteknik AB erbjuder eltjänster i form av entreprenader, service samt underhåll. Vi finns tillgängliga i både Göteborgsområden och Stockholm."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lorem Ipsum Elteknik AB</title>
+  </head>
+  <!--Go'kväll, go'morron, go'afton?
+  Webbplatsen är uppbyggd med fyra olika filer; index.html, project.html,
+  style.css samt myscript.js.
+  Denna fil, index, är semantiskt uppbyggd med HTML5-strukturelement som header,
+  nav, main, section, article, aside samt footer.
+  Vidare är alla klasser och IDs uppmärkta med engelska namn/ord för god praxis.
+  -->
+  <body>
+    <!-- Navigator -->
+    <header>
+      <video autoplay muted loop id="background_image">
+        <!--Video hämtad från http://www.vecteezy.com-->
+        <source
+          id="video_source"
+          src="./images/moving-light-bulbs.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div id="headtitle">
+        <h1>Vi följer inte strömmen.</h1>
+        <h1>Vi leder <span>den.</span></h1>
+        <div id="button_header">
+          <p>Kontakta oss för en offertförfrågan</p>
+          <button>Offert</button>
+        </div>
+      </div>
+      <nav>
+        <div id="navbar">
+          <img id="nav_logo" src="./images/lorem_ab.png" alt="Logotype" />
+          <!-- https://www.freelogodesign.org/ -->
+          <ul id="nav">
+            <li>
+              <a href="index.html" class="nav_links">Hem<span></span></a>
+            </li>
+            <li>
+              <a href="#" class="nav_links">Om oss<span></span></a>
+            </li>
+            <li>
+              <a href="project.html" class="nav_links"
+                >Våra projekt<span></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="nav_links">Medarbetare<span></span></a>
+            </li>
+            <li>
+              <a href="#" class="nav_links">Ansök till oss<span></span></a>
+            </li>
+            <li>
+              <a href="#" class="nav_links">Kontakt<span></span></a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Content -->
+    <main>
+      <section id="first_sect">
+        <h1>Kvalificerade elinstallationer med precision</h1>
+        <hr />
+        <p class="content_box1">
+          Lorem Ipsum Elteknik projekterar, installerar och utför allt inom el-
+          och teleinstallationer i alla typer av fastigheter. Från offentliga
+          och samhällsviktiga miljöer, industri och bygg – till handel,
+          mötesplatser inom nöje och bostäder.
+        </p>
+      </section>
+      <section id="second_sect">
+        <article class="first_article from-left">
+          <!-- Bilder hämtade från http://www.pexels.com -->
+          <img
+            id="article_img1"
+            src="images/entreprenad.jpg"
+            alt="Construction image"
+          />
+          <div class="article_wrap">
+            <div class="article_content">
+              <h2>Entreprenad</h2>
+              <p>
+                Vid en nyproduktion vill man givetvis inkludera kunniga och
+                erfarna hantverkare. Detta är viktigt för att nyproduktionen ska
+                bli ordentligt gjord från början och inte börja ge efter inom
+                närmsta tiden.
+              </p>
+              <button>Läs mer</button>
+            </div>
+          </div>
+        </article>
+        <article class="second_article from-right">
+          <img
+            id="article_img2"
+            src="images/electric-gd22f0f4ca_1280.jpg"
+            alt="Industry image"
+          />
+          <div class="article_wrap">
+            <div class="article_content">
+              <h2>Industri</h2>
+              <p>
+                Vi drar fram matningar till olika maskiner, kopplar in
+                frekvensomriktare till era motor. När vi är ute och gör ett jobb
+                hos er kan ni vara säkra att ni har en duktig industrielektriker
+                hos er.
+              </p>
+              <button>Läs mer</button>
+            </div>
+          </div>
+        </article>
+        <article class="first_article from-left">
+          <img
+            id="article_img3"
+            src="images/elservice2.jpg"
+            alt="Service image"
+          />
+          <div class="article_wrap">
+            <div class="article_content">
+              <h2>Service</h2>
+              <p>
+                Våra elektriker har lång erfarenhet av olika typer av
+                servicearbeten. Vi kan utföra service som enskilt uppdrag eller
+                löpande service på serviceavtal. Lorem Ipsum utför service på
+                allt elektroniskt i hemmet eller fastigheten.
+              </p>
+              <button>Läs mer</button>
+            </div>
+          </div>
+        </article>
+        <article class="second_article from-right">
+          <img
+            id="article_img4"
+            src="images/data.jpg"
+            alt="Datanetwork image"
+          />
+          <div class="article_wrap">
+            <div class="article_content">
+              <h2>Data- och telekommunikation</h2>
+              <p>
+                Idag är datanät lika självklart vid nybyggnation och
+                kommersiella fastigheter som telefonjack var förr. Vi lever i en
+                digitalt uppkopplad värld, där vi tar för givet att musiken
+                skall höras i alla rum, att kylskåpet är uppkopplat och att
+                belysningen skall kunna styras från telefonen. Vi arbetar allt
+                mer med smarta digitala nät.
+              </p>
+              <button>Läs mer</button>
+            </div>
+          </div>
+        </article>
+        <!-- Aside-ish -->
+        <aside>
+          <span
+            >Vi är medlemmar av Installatörsföretagen, IN, som är bransch- och
+            arbetsgivarorganisation för Sveriges el- och teleteknikföretag.
+            <img
+              src="images/installatorforetagen.png"
+              alt="Installatorforetagen"
+            />
+            <!-- Bild skapad själv genom att göra en egen logo.
+            https://www.freelogodesign.org/-->
+          </span>
+        </aside>
+      </section>
+      <!-- Form -->
+      <section id="third_sect">
+        <h1>Kontakta oss</h1>
+        <hr />
+        <div id="office_wrap">
+          <h2>Välj kontor <span>*</span></h2>
+        </div>
+        <form action="submit.php" method="POST">
+          <ul>
+            <li>
+              <input id="gbg" name="city" type="radio" value="Göteborg" />
+              <label for="gbg">Göteborg</label>
+            </li>
+            <li>
+              <input id="sthlm" name="city" type="radio" value="Stockholm" />
+              <label for="sthlm">Stockholm</label>
+            </li>
+          </ul>
+          <div id="form_wrap">
+            <div class="input_forms">
+              <input
+                class="form_field"
+                name="first-name"
+                placeholder="Namn *"
+                type="text"
+              />
+              <input
+                class="form_field"
+                name="first-name"
+                placeholder="Företag"
+                type="text"
+              />
+              <input
+                class="form_field"
+                name="first-name"
+                placeholder="E-postadress *"
+                type="email"
+              />
+              <input
+                class="form_field"
+                name="first-name"
+                placeholder="Telefonnummer"
+                type="tel"
+              />
+            </div>
+            <div id="textarea_wrap">
+              <textarea
+                cols="50"
+                name="biography"
+                placeholder="Meddelande"
+                rows="15"
+              ></textarea>
+            </div>
+          </div>
+          <div class="gdpr_wrap">
+            <input id="gdpr" name="gdpr" type="checkbox" value="gdpr" />
+            <span>
+              Genom att använda detta formulär accepterar du lagring och
+              hantering av dina uppgifter på denna webbplats. Uppgifterna i
+              fråga kommer att användas för att återkoppla till kund/besökare.
+            </span>
+          </div>
+          <button>Skicka</button>
+        </form>
+        <hr />
+      </section>
+    </main>
+    <!-- Bottom -->
+    <footer>
+      <div id="footer_wrap">
+        <div id="footer_policies">
+          <h2>Företaget</h2>
+          <ul>
+            <li>
+              <a href="#">Om oss</a>
+            </li>
+            <li>
+              <a href="#">Integritetspolicy</a>
+            </li>
+            <li>
+              <a href="#">Cookies</a>
+            </li>
+            <li>
+              <a href="#">Ads</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer_info">
+        <h2>Lorem Ipsum Elteknik AB</h2>
+        <p>
+          Ebbe Lieberathsgatan 18 <span>|</span> 412 65 Göteborg
+          <span>|</span> 08-702 00 90 <span>|</span> info@loremel.se
+        </p>
+        <p>Org.Nr. 556899-8669</p>
+        <p>&#169; Copyright 2022 Johan Leijon IT-Högskolan</p>
+      </div>
+      <div id="footer_socialmedia">
+        <a href="index.html">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="index.html">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="index.html">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="index.html">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <p>&#169; Copyright 2022 Johan Leijon IT-Högskolan</p>
+      </div>
+    </footer>
+
+    <script src="myscript.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
